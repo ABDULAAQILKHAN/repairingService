@@ -1,0 +1,81 @@
+.container{
+    color:rgb(133, 133, 0);
+    margin-top: 0%;
+    width: 98%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 0px 50px rgb(210, 221, 0);
+    border-radius: 20px;
+}
+.h1{
+    color:rgb(133, 133, 0);
+    position: relative;
+    left: 5%;
+    text-decoration: none;
+}
+li:hover{
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+Link{
+    text-decoration: none;
+}
+.icon{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(15, 14, 1);
+    color: yellow;
+    position: absolute;
+    right: 5%;
+    top: 3%;
+    visibility: hidden;
+}
+ul{
+    width: 100%;
+    height: 80px;
+    margin-top: 2%;
+    margin-left: 0%;
+    list-style-type: none;
+}
+li{
+    text-decoration: none;
+    color:rgb(133, 133, 0);
+    display: inline;
+    margin-left: 28.5%;
+    text-decoration: none;
+}
+@media only screen and (max-width: 768px){
+ul{
+    margin-top: 4%;
+}
+}
+@media only screen and (max-width: 480px){
+.container{
+    width: 100%;
+    flex-direction: column;
+}
+ul{
+    margin-top: -20%;
+}
+.off{
+    visibility: hidden;
+}
+.on{
+    visibility: visible;
+}
+.icon{
+    visibility: visible;
+}
+li{
+    float: none;
+    position: relative;
+    margin-top: 5%;
+    margin-left: 32%;
+    display:block;
+    padding: 0;
+}
+
+
+}
+

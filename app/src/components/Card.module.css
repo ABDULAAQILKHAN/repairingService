@@ -1,0 +1,98 @@
+body{
+    color:rgb(133, 133, 0);
+    height: 100%;
+    width: 100%;
+}
+.container {
+    margin-top: 0%;   
+    height: 600px; 
+}
+.search{
+    caret-color: yellow;
+    color: yellow;
+    position: relative;
+    height: 35px;
+    width: 50%;
+    margin: 3%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.button{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 44px;
+    width: 10%;    
+    border: 1px solid yellow;
+    background-color: rgb(15, 14, 1);
+    color: yellow;
+    margin: 3%;
+    margin-left: -3%;
+    outline: none;
+}
+.button:hover{
+    color: green;
+    border: 1px solid green;
+}
+.Card{
+    margin-top: 15%;
+    border: 1px solid rgb(133, 133, 0);
+    height: 100%;
+    width: 80%;
+    box-shadow: 0px 0px 50px rgb(210, 221, 0);
+    border-radius: 20px;
+}
+.image{
+    border-radius: 20px;
+}
+.image > h1{
+    -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 90%;
+    font-size: 5vh;
+    color: whitesmoke;
+    margin: 0%;
+    padding: 2%;
+    border-radius: 20px;
+}
+.cardContainer{
+    height: 600px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    column-gap: 0%;
+    row-gap: 10%;
+    border-radius: 20px;
+}
+@media only screen and (max-width: 768px){
+    .cardContainer{
+        grid-template-columns: 1fr;
+        row-gap: 3%;
+    }
+    .Card{
+        height: 100%;
+        width: 80%;
+    
+    }
+}
+@media only screen and (max-width: 480px){
+    .cardContainer{
+        grid-template-columns: 1fr ;
+        height: 250%;
+    }
+    .Card{
+        height: 90%;
+        width: 80%;
+    
+    }
+    .image > h1{
+        font-size: 3vh;
+    }
+    .image > p {
+        font-size: 3vh;
+    }
+    .search{
+        margin-top: 5%;
+    }
+}
